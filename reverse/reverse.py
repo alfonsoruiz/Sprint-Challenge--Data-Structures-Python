@@ -46,7 +46,7 @@ class LinkedList:
             return None
 
         if current_node.next_node:
-            self.reverse_list(current_node.next_node, node)
+            self.reverse_list(current_node.next_node, current_node)
             current_node.set_next(prev)
         else:
             current_node.set_next(prev)
